@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 89px;
+    background-color: #2d303a;
+}
+body{
+    width: 1020px;
+}
+.header-logo{
+color: #ffffff;
+font-family: Lato;
+font-size: 25px;
+font-weight: 700;
+text-transform: uppercase;
+}
+li{
+    /* Style for "HOME" */
+color: #ffffff;
+font-family: Lato;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+display: inline;
+/* Text style for "HOME" */
+}
+.header-bottom{
+height: 6px;
+background-color: #323746;
+}
+.slider{
+height: 600px;
+background-color: #f06c64;
+}
+.bg-bottom{
+height: 15px;
+background-color: #ea676b;
+}
+.services{
+    background-color: #f2f2f2;
+}
+.services-title{
+color: #666d89;
+font-family: "Lato - Black";
+font-size: 30px;
+font-weight: 400;
+}
+.services-description{
+color: #767e9e;
+font-family: Lato;
+font-size: 18px;
+font-weight: 300;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.grid-item img{
+    width: 59px;
+    height: 59px;
+}
+.bg-bottom-services{
+width: 1020px;
+height: 6px;
+background-color: #ffffff;
+}
