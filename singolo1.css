@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Lato; /* Гарнитура шрифта */
+    src: url(assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+    
+   }
 *{
     margin: 0;
     padding: 0;
@@ -5,20 +10,44 @@
 header{
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 89px;
     background-color: #2d303a;
 }
 body{
     width: 1020px;
+    font-family: Lato;
+
 }
+nav-bar{
+    margin-left: 414px;
+    margin-right: 40px;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider img{
+    
+}
+
 .header-logo{
+    margin-left: 40px;
+width: 115px;
+height: 20px;
 color: #ffffff;
 font-family: Lato;
 font-size: 25px;
 font-weight: 700;
 text-transform: uppercase;
 }
+.logo-dot{
+    color: #f06c64
+}
+
 li{
+    list-style-type: circle;
     /* Style for "HOME" */
 color: #ffffff;
 font-family: Lato;
@@ -45,29 +74,55 @@ background-color: #ea676b;
 }
 .services-title{
 color: #666d89;
-font-family: "Lato - Black";
 font-size: 30px;
-font-weight: 400;
+font-weight: bolder;
+margin-left: 40px;
+padding-top: 67px;
+margin-bottom: 33px;
+font-family: Lato;
 }
 .services-description{
 color: #767e9e;
 font-family: Lato;
 font-size: 18px;
 font-weight: 300;
+width: 939px;
+height: 47px;
+margin-left: 40px;
+margin-bottom: 47px;
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-left: 40px;
+    padding-bottom: 66px;
 }
 .grid-item {
-    padding: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
+    color: #767e9e;
+    margin-top: 37px;
+    
 }
 .grid-item img{
     width: 59px;
     height: 59px;
+    margin-right: 20px;
 }
+.grid-item p{
+    width: 220px;
+    font-family: Lato;
+}
+.grid-item-title{
+
+color: #666d89;
+font-size: 18px;
+font-weight: bolder;
+padding-bottom: 19px;
+
+}
+
 .bg-bottom-services{
 width: 1020px;
 height: 6px;
