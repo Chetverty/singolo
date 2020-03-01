@@ -1,0 +1,110 @@
+    @font-face {
+        font-family: Lato; /* Гарнитура шрифта */
+        src: url(assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+        
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 1020px;
+    }
+    .portfolio{
+    background-color: #2d303a;
+    padding: 67px 40px 73px 40px;
+    }
+    .portfolio .title{
+        /* Style for "Portfolio" */
+    color: #666d89;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+    margin-bottom: 33px;
+    }
+    .portfolio .desc{
+        /* Style for "Duis molli" */
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 21px;
+    }
+    .buttons-portfolio button{
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    background-color: transparent;
+    border: 1px solid #666d89;
+    border-radius: 4px;
+    padding: 6px;
+    margin-right: 10px;
+    }
+
+    .buttons-portfolio button:last-child {
+        margin-right: 0px;
+    }
+    .buttons-portfolio .buttons-portfolio-active{
+    border: 1px solid #dedede;
+    color: #dedede;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    }
+    .grid-container-portfolio{
+    margin-top:19px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;    
+    }
+    .bg-bottom-portfolio{
+width: 1020px;
+height: 6px;
+background-color: #323746;
+}
+.bg-bottom-about-us{
+width: 1020px;
+height: 6px;
+background-color: #ffffff;
+}
+.about-us{
+background-color: #f2f2f2;
+padding: 66px 40px;
+font-family: "Lato";
+color: #767e9e;
+}
+
+.people {
+    width: 300px;
+}
+.grid-container-about-us {
+    display: flex;
+    justify-content: space-between;
+}
+.about-us .title-about-us{
+    margin-bottom: 33px;
+}
+.about-us .description-about-us{
+    margin-bottom: 49px;
+}
+.description-about-us{
+font-size: 18px;
+font-weight: 300;
+line-height: 30px;
+}
+.links img{
+    margin-top: 28px;
+    margin-right: 8px;
+}
+.about-us h2{
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
