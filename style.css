@@ -1,0 +1,355 @@
+@font-face {
+    font-family: Lato; /* Гарнитура шрифта */
+    src: url(assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
+    
+   }
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 89px;
+    background-color: #2d303a;
+}
+body{
+    width: 1020px;
+    font-family: Lato;
+
+}
+nav-bar{
+    margin-left: 414px;
+    margin-right: 40px;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider img{
+    
+}
+
+.header-logo{
+    margin-left: 40px;
+width: 115px;
+height: 20px;
+color: #ffffff;
+font-family: Lato;
+font-size: 25px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.logo-dot{
+    color: #f06c64
+}
+
+li{
+    list-style-type: circle;
+    /* Style for "HOME" */
+color: #ffffff;
+font-family: Lato;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+display: inline;
+/* Text style for "HOME" */
+}
+.header-bottom{
+height: 6px;
+background-color: #323746;
+}
+.slider{
+height: 600px;
+background-color: #f06c64;
+}
+.bg-bottom{
+height: 15px;
+background-color: #ea676b;
+}
+.services{
+    background-color: #f2f2f2;
+}
+.services-title{
+color: #666d89;
+font-size: 30px;
+font-weight: bolder;
+margin-left: 40px;
+padding-top: 67px;
+margin-bottom: 33px;
+font-family: Lato;
+}
+.services-description{
+color: #767e9e;
+font-family: Lato;
+font-size: 18px;
+font-weight: 300;
+width: 939px;
+height: 47px;
+margin-left: 40px;
+margin-bottom: 47px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 40px;
+    padding-bottom: 66px;
+}
+.grid-item {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #767e9e;
+    margin-top: 37px;
+    
+}
+.grid-item img{
+    width: 59px;
+    height: 59px;
+    margin-right: 20px;
+}
+.grid-item p{
+    width: 220px;
+    font-family: Lato;
+}
+.grid-item-title{
+
+color: #666d89;
+font-size: 18px;
+font-weight: bolder;
+padding-bottom: 19px;
+
+}
+
+.bg-bottom-services{
+width: 1020px;
+height: 6px;
+background-color: #ffffff;
+}
+
+.about-us h2{
+    margin-top: 19px;
+}
+.portfolio{
+    background-color: #2d303a;
+    padding: 67px 40px 73px 40px;
+    }
+    .portfolio .title{
+        /* Style for "Portfolio" */
+    color: #666d89;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 17.86px;
+    margin-bottom: 33px;
+    }
+    .portfolio .desc{
+        /* Style for "Duis molli" */
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 21px;
+    }
+    .buttons-portfolio button{
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    background-color: transparent;
+    border: 1px solid #666d89;
+    border-radius: 4px;
+    padding: 6px;
+    margin-right: 10px;
+    }
+
+    .buttons-portfolio button:last-child {
+        margin-right: 0px;
+    }
+    .buttons-portfolio .buttons-portfolio-active{
+    border: 1px solid #dedede;
+    color: #dedede;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    }
+    .grid-container-portfolio{
+    margin-top:19px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;    
+    }
+    .bg-bottom-portfolio{
+width: 1020px;
+height: 6px;
+background-color: #323746;
+}
+.bg-bottom-about-us{
+width: 1020px;
+height: 6px;
+background-color: #ffffff;
+}
+.about-us{
+background-color: #f2f2f2;
+padding: 66px 40px;
+font-family: "Lato";
+color: #767e9e;
+}
+
+.people {
+    width: 300px;
+}
+.grid-container-about-us {
+    display: flex;
+    justify-content: space-between;
+}
+.about-us .title-about-us{
+    margin-bottom: 33px;
+}
+.about-us .description-about-us{
+    margin-bottom: 49px;
+}
+.description-about-us{
+font-size: 18px;
+font-weight: 300;
+line-height: 30px;
+}
+.links img{
+    margin-top: 28px;
+    margin-right: 8px;
+}
+.about-us h2{
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+.title-contact{
+font-size: 30px;
+line-height: 18px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 900;
+text-align: left;
+padding: 67px 0px 28px 0px;
+}
+.desc-contact{
+width: 940px;
+font-size: 18px;
+line-height: 30px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: lighter;
+text-align: left;
+padding-bottom: 49px;
+}
+.info-contact{
+    margin-left: 20px;
+}
+.title-info-contact{
+font-size: 18px;
+line-height: 18px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 900;
+text-align: left;
+padding-bottom: 17px;
+}
+.desc-info-contact{
+width: 300px;
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+}
+.data-info-contact{
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+padding-top: 25px;
+}
+.data-info-contact a{
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+padding-top: 25px;
+}
+.contact{
+height: 648px;
+background-color: #f06c64;
+padding-left: 40px;
+padding-bottom: 67px;
+}
+.contact-info-form{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+padding-left: 40px;
+padding-right: 40px;
+height: 76px;
+background-color: #2d303a;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+form{
+display: flex;
+flex-direction: column;  
+}
+form input, textarea{
+font-size: 12px;
+line-height: 22px;
+color: #f48c8f;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+width: 619px;
+height: 38px;
+border-radius: 5px;
+background-color: #d6564f;
+border: none;
+margin-bottom: 14px;
+}
+form input::placeholder,textarea::placeholder{
+font-size: 12px;
+line-height: 22px;
+color: #f48c8f;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+padding-left: 15px;
+}
+
+
+form button{
+width: 100px;
+height: 40px;
+border: 1px solid white;
+border-radius: 10px;
+background-color: transparent;
+color: white;
+text-transform: uppercase;
+font-weight: bolder;
+}
+.icons img{
+margin-right: 7px;
+}
+footer p{
+color: #646B87;
+font-size: 12px;
+}
