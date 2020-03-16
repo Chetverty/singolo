@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header" id="myHeader">
         <p class="header-logo">singolo</p>
         <p class="logo-dot">*</p>
         <nav-bar>
-            <ul>
-                <li style="color: #f06c64; cursor:pointer">Home</li>
+            <ul class="hor-menu" id="hor-menu-id">
+                <li style="cursor:pointer"><a class="hor-menu-item active" href="#home">Home</a></li>
                 <li style="color: #494e62; margin:10px">  · </li>
-                <li style="cursor:pointer">Services</li>
+                <li style="cursor:pointer"><a class="hor-menu-item" href="#services">Services</a></li>
                 <li style="color: #494e62; margin:10px">  · </li>
-                <li style="cursor:pointer">Portfolio</li>
+                <li style="cursor:pointer"><a class="hor-menu-item" href="#portfolio">Portfolio</a></li>
                 <li style="color: #494e62; margin:10px">  · </li>
-                <li style="cursor:pointer">About</li>
+                <li style="cursor:pointer"><a class="hor-menu-item" href="#about">About</a></li>
                 <li style="color: #494e62; margin:10px">  · </li>
-                <li style="cursor:pointer">Contact</li>
+                <li style="cursor:pointer"><a class="hor-menu-item" href="#contact">Contact</a></li>
             </ul >
         </nav-bar>
     </header> 
     <div class="header-bottom"></div>  
-    <div class="slider">
+    <div id="home" class="slider">
         <img style="width: 16px; height: 27px; margin-left: 40px; cursor: pointer;" src="assets/chev.png">
         <img style="width: 240px; height: 483px; margin-left: 54px;" src="assets/iPhone_Vertical.png">
         <img style="width: 483px; height: 240px; margin-left: 73px;" src="assets/iPhone_Horizontal.png">
@@ -34,7 +35,7 @@
     </div>
     <div class="bg-bottom">
     </div>
-    <div class="services">
+    <div id="services" class="services">
         <p class="services-title">Our services</p>
         <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="grid-container">
@@ -84,7 +85,7 @@
             </div>
     </div>
     <div class="bg-bottom-services"></div>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         
         <h1 class="title">Portfolio</h1>
         <p class="desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -112,7 +113,7 @@
     </div>
     <div class="bg-bottom-portfolio"></div>
 
-    <div class="about-us">
+    <div id="about" class="about-us">
     <h1 class="title-about-us">About Us</h1>   
     <p class="description-about-us">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> 
         <div class="grid-container-about-us">
@@ -161,7 +162,7 @@
         </div>
     </div>
     <div class="bg-bottom-about-us"></div>
-    <div class="contact">
+    <div id="contact" class="contact">
         
         <h1 class="title-contact">Get a Quote</h1>
         <p class="desc-contact">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -195,6 +196,6 @@
             </div>
         </footer>
         
-    
+    <script src="script.js"></script>
 </body>
 </html>
