@@ -9,6 +9,12 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="modal hidden">
+        <div class="modal__message">
+          Test
+        </div>
+        <div class="modal__background"></div>
+      </div>
     <header class="header" id="myHeader">
         <p class="header-logo">singolo</p>
         <p class="logo-dot">*</p>
@@ -26,14 +32,34 @@
             </ul >
         </nav-bar>
     </header> 
-    <div class="header-bottom"></div>  
-    <div id="home" class="slider">
-        <img style="width: 16px; height: 27px; margin-left: 40px; cursor: pointer;" src="assets/chev.png">
-        <img style="width: 240px; height: 483px; margin-left: 54px;" src="assets/iPhone_Vertical.png">
-        <img style="width: 483px; height: 240px; margin-left: 73px;" src="assets/iPhone_Horizontal.png">
-        <img style="width: 16px; height: 27px; margin-left: 55px; cursor: pointer;" src="assets/chev (1).png">
-    </div>
+    <div class="header-bottom"></div> 
+
+    <section class="slider home" id="home">
+        <div class="wrapper">
+       
+          <button class="arrow left" type="button" aria-label="Slide previous"></button>
+    
+          <div class="slider__images">
+            <div class="iphone iphone_vertical">
+              <div class="iphone__screen iphone__clickable"></div>
+              <div class="iphone__phone iphone__clickable"></div>
+              <div class="iphone__shadow"></div>
+            </div>
+            <div class="iphone iphone_horizontal">
+              <div class="iphone__screen iphone__clickable"></div>
+              <div class="iphone__phone iphone__clickable"></div>
+              <div class="iphone__shadow"></div>
+            </div>
+          </div>
+    
+          <button class="arrow right" type="button" aria-label="Slide next"></button>
+        </div>
+      </section>
+
+    
+
     <div class="bg-bottom">
+        
     </div>
     <div id="services" class="services">
         <p class="services-title">Our services</p>
@@ -89,25 +115,25 @@
         
         <h1 class="title">Portfolio</h1>
         <p class="desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <div class="buttons-portfolio">
-            <button class="buttons-portfolio-active">All</button>
-            <button>Web Design</button>
-            <button>Graphic Design</button>
-            <button>Artwork</button>
+        <div id="portfolio" class="buttons-portfolio">
+            <button class="portfolio-item portfolio-active">All</button>
+            <button class="portfolio-item">Web Design</button>
+            <button class="portfolio-item">Graphic Design</button>
+            <button class="portfolio-item">Artwork</button>
         </div>
-        <div class="grid-container-portfolio">
-                <img src="assets/Project.png">
-                <img src="assets/Project (1).png">
-                <img src="assets/Layer_9.png">
-                <img src="assets/Project (2).png">
-                <img src="assets/Project (3).png">
-                <img src="assets/Project (4).png">
-                <img src="assets/Layer_11.png">
-                <img src="assets/Layer_8.png">
-                <img src="assets/Project (5).png">
-                <img src="assets/Project (6).png">
-                <img src="assets/Project (7).png">
-                <img src="assets/Project (8).png">
+        <div id="portfolio-grid" class="grid-container-portfolio">
+                <img class="grid-item-portfolio grid-item-active" src="assets/Project.png">
+                <img class="grid-item-portfolio" src="assets/Project (1).png">
+                <img class="grid-item-portfolio" src="assets/Layer_9.png">
+                <img class="grid-item-portfolio" src="assets/Project (2).png">
+                <img class="grid-item-portfolio" src="assets/Project (3).png">
+                <img class="grid-item-portfolio" src="assets/Project (4).png">
+                <img class="grid-item-portfolio" src="assets/Layer_11.png">
+                <img class="grid-item-portfolio" src="assets/Layer_8.png">
+                <img class="grid-item-portfolio" src="assets/Project (5).png">
+                <img class="grid-item-portfolio" src="assets/Project (6).png">
+                <img class="grid-item-portfolio" src="assets/Project (7).png">
+                <img class="grid-item-portfolio" src="assets/Project (8).png">
         </div>
 
     </div>
@@ -168,11 +194,11 @@
         <p class="desc-contact">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="contact-info-form">
         <form action="http:\\google.com" method= "POST">
-            <input type="text" required placeholder="Name (Required)">
-            <input type="email" required placeholder="Email (Required)">
-            <input placeholder="Subject">
-            <textarea style="height: 201px;" placeholder="Describe your project in detail..."></textarea>
-            <button type="submit">submit</button>
+            <input name="name" type="text" required placeholder="Name (Required)">
+            <input name="email" type="email" required placeholder="Email (Required)">
+            <input name="subject" placeholder="Subject">
+            <textarea name="message" style="height: 201px;" placeholder="Describe your project in detail..."></textarea>
+            <button name="submit" formmethod="POST" type="submit">submit</button>
         </form>
     
         <div class="info-contact">
